@@ -1,10 +1,17 @@
 package com.example.JPALEC6.Models;
+import javax.persistence.*;
 
+@Entity
+@Table(name="my_book")
 public class Book {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO) // using hibernate
+    //@GeneratedValue(strategy = GenerationType.IDENTITY) // using MySQL SERVER
     private int id;
     private String name,authorName;
-    private int cost;
 
+    @Column(name="book_price")
+    private int cost;
     public int getId() {
         return id;
     }
