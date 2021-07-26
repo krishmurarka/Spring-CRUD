@@ -1,4 +1,4 @@
-package com.example.JPALEC6;
+package com.example.JPALEC6.Controller;
 
 import com.example.JPALEC6.Repository.BookRepository;
 import org.springframework.beans.factory.annotation.Autowired;
